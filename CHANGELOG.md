@@ -12,3 +12,7 @@ Adds a secure REST API endpoint that triggers wp_mail() so you can test FluentSM
 ## 1.0.2 - Rename plugin
 
 - From FluentSMTP Email Test Endpoint to Skyrocket FluentSMTP Email Test Endpoint
+
+## 1.0.3 - Include automated update checker
+
+- Include automated update checker

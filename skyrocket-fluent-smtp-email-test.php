@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Skyrocket FluentSMTP Email Test Endpoint
  * Description: Adds a secure REST API endpoint that triggers wp_mail() so you can test FluentSMTP delivery from outside WordPress.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Skyrocket Digital Development
  *
  * Plugin Purpose:
@@ -47,6 +47,17 @@
  */
 
 defined('ABSPATH') || exit;
+
+// GitHub updater configuration
+$github_updater_config = [
+    'username' => 'lavamitts',
+    'repository' => 'skyrocket-fluent-smtp-email-test',
+    'plugin_file' => __FILE__,
+];
+
+// Updater code
+require_once __DIR__ . '/vendor/lavamitts/skyrocket-plugin-updater/src/plugin-updater.php';
+
 
 /**
  * Registers and handles the FluentSMTP email test REST API endpoint.
